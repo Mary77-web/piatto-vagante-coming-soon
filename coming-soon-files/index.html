@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piatto Vagante - Coming Soon</title>
+    <meta name="description" content="La piattaforma completa di digitalizzazione per il Turismo Enogastronomico Campano">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="logo">
+                <img src="piattovagante.png" alt="Piatto Vagante" class="logo-image">
+            </div>
+            
+            <div class="tagline">
+                La Piattaforma completa di digitalizzazione<br>
+                per il Turismo Enogastronomico Campano
+            </div>
+            
+            <form class="email-form" id="emailForm">
+                <input 
+                    type="email" 
+                    placeholder="La tua email" 
+                    required 
+                    id="emailInput"
+                    class="email-input"
+                />
+                <button type="submit" class="submit-btn">Avvisami al Lancio</button>
+            </form>
+            
+            <div class="coming-soon">
+                In arrivo presto
+            </div>
+        </div>
+        
+        <footer class="footer">
+            <p>Powered by AiLab Communication</p>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('emailForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = document.getElementById('emailInput').value;
+            alert('Grazie! Ti avviseremo al lancio: ' + email);
+            document.getElementById('emailInput').value = '';
+        });
+    </script>
+</body>
+</html>
+
+
