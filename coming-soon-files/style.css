@@ -163,8 +163,8 @@ body {
 }
 .lang-switch {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 30px;
+    right: 40px;
 }
 
 .lang-switch a {
