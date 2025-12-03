@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Piatto Vagante - Coming Soon</title>
-    <meta name="description" content="Le migliori esperienze enogastronomiche campane in un'unica app. Cantine, agriturismi, degustazioni, ristoranti.">
+    <meta name="description" content="Le migliori esperienze enogastronomiche campane in un'unica app. Cantine, agriturismi, oleifici e ristoranti.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,10 +17,14 @@
                 <img src="logo2.png" alt="Piatto Vagante" class="logo-image">
             </div>
             
-            <div class="tagline">
+            <h1 class="headline">
                 Le migliori esperienze enogastronomiche campane<br>
                 in un'unica app.
-            </div>
+            </h1>
+            
+            <p class="description">
+                Stiamo selezionando le migliori cantine, agriturismi, oleifici e ristoranti della Campania. Presto potrai prenotare degustazioni, tavoli e esperienze uniche con un tap. Lascia la tua email per accedere prima di tutti.
+            </p>
             
             <form class="email-form" id="emailForm">
                 <input 
@@ -36,7 +43,7 @@
         </div>
         
         <footer class="footer">
-            <p>Powered by AiLab Communication</p>
+            <p>© 2025 Piatto Vagante · AiLab Communication</p>
         </footer>
     </div>
 
@@ -44,7 +51,7 @@
         document.getElementById('emailForm').addEventListener('submit', function(e) {
             e.preventDefault();
             const email = document.getElementById('emailInput').value;
-            alert('Grazie! Ti avviseremo al lancio: ' + email);
+            alert('Grazie! Ti avviseremo al lancio.');
             document.getElementById('emailInput').value = '';
         });
     </script>
