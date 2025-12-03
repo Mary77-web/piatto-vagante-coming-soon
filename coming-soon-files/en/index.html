@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piatto Vagante - Coming Soon</title>
+    <meta name="description" content="The best Campania food & wine experiences in one app. Wineries, farmhouses, olive mills and restaurants.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="logo">
+                <img src="../logo2.png" alt="" class="logo-image">
+            </div>
+            
+            <h1 class="headline">
+                The best Campania food & wine experiences<br>
+                in one app.
+            </h1>
+            
+            <p class="description">
+                We're selecting the finest wineries, farmhouses, olive mills and restaurants in Campania. Soon you'll be able to book tastings, tables and unique experiences with a tap. Leave your email to get early access.
+            </p>
+            
+            <form class="email-form" id="emailForm">
+                <input 
+                    type="email" 
+                    placeholder="Your email" 
+                    required 
+                    id="emailInput"
+                    class="email-input"
+                />
+                <button type="submit" class="submit-btn">Notify Me</button>
+            </form>
+            
+            <div class="coming-soon">
+                Coming early 2026
+            </div>
+        </div>
+        
+        <footer class="footer">
+            <p>© 2025 Piatto Vagante · AiLab Communication</p>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('emailForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = document.getElementById('emailInput').value;
+            alert('Thank you! We\'ll notify you at launch.');
+            document.getElementById('emailInput').value = '';
+        });
+    </script>
+</body>
+</html>
